@@ -31,7 +31,7 @@ const props = defineProps({
 <template>
     <RouterLink :to="{ name: 'CardDetail', params: {id: props.employee._id}}">
     <div class="border border-gray-500 rounded-lg shawdow bg-gray-400 h-full">
-        <img class="object-fill h-480 w-960 rounded-t-lg" v-bind:src="faker.image.urlLoremFlickr({category: 'cats', height: 480, width: 960 })"/>
+        <img class="object-fill h-480 w-960 rounded-t-lg" v-bind:src="faker.image.urlLoremFlickr({category: 'cat', height: 480, width: 960 })"/>
         <div class="p-4">
             <p class="mb-2 text-2x1 font-bold">{{ props.employee.firstName }} {{ props.employee.lastName }}</p>
             <p class="mb-3 font-normal text-gray-800">{{ props.employee.title }}</p>
